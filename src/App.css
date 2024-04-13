@@ -1,3 +1,4 @@
+/* Updated CSS with changes */
 .App {
   text-align: center;
 }
@@ -15,13 +16,14 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* Remove min-height to allow the navbar to take its natural height */
+}
+
+/* New styles for MyNavbar */
+.MyNavbar {
+  display: flex; /* Use flexbox to arrange items horizontally */
+  align-items: center; /* Align items vertically in the center */
+  justify-content: space-between; /* Distribute items evenly along the main axis */
 }
 
 .App-link {

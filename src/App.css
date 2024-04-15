@@ -1,40 +1,34 @@
-/* Updated CSS with changes */
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  /* Remove min-height to allow the navbar to take its natural height */
+  background-color: white;
+  color: black;
+  padding: 20px;
 }
 
-/* New styles for MyNavbar */
+.content {
+  padding: 20px;
+}
+
 .MyNavbar {
-  display: flex; /* Use flexbox to arrange items horizontally */
-  align-items: center; /* Align items vertically in the center */
-  justify-content: space-between; /* Distribute items evenly along the main axis */
+  background-color: white !important; /* Override Bootstrap's dark background */
+  color: black; /* Set text color */
+  padding: 10px 20px; /* Add padding */
+  position: fixed; /* Position navbar at the top */
+  width: 100%; /* Full width */
+  top: 0; /* Position at the top */
+  z-index: 1000; /* Set z-index to ensure it appears above other content */
 }
 
-.App-link {
-  color: #61dafb;
+
+.navbar-link {
+  color: black ; /* Set link color */
+  text-decoration: none; /* Remove underline */
+  margin-right: 20px; /* Add margin between links */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-link:hover {
+  color: lightgray; /* Change link color on hover */
 }
